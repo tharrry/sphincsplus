@@ -1,3 +1,15 @@
+# Benni
+
+Repo clonen
+Mit `benchmark.py` `ref`, `refx4` und `refx4neon_transpose` einzeln benchmarken und in einen file schreiben.
+In `extractBench.py` die Filenamen in Zeilen 189, 191 und 193 anpassen.
+Default Filenamen sind `ref.txt`, `refx4.txt` und `transpose.txt`
+
+`Cortex-A72_benchmarks.txt` enthält ergebnisse vom RasPi4.
+
+Ich weiß nicht wie `cpucycles.c`, `cpucycles.c` und `m1cycles.c` zu verwenden sind, scheinen aber notwendig für benchmakrs auf dem M1 zu sein.
+Eventuell ist der cycles counter im usermode nciht verfügbar, siehe Appendix B.
+
 ## SPHINCS+ ![][test-ref] ![][test-sha256-avx2] ![][test-shake256-avx2] ![][test-haraka-aesni]
 
 [test-ref]: https://github.com/sphincs/sphincsplus/workflows/test-ref/badge.svg
