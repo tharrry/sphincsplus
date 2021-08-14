@@ -41,10 +41,9 @@ static void delta(unsigned long long *l, size_t llen)
 
 static unsigned long long cpucycles(void)
 {
-  unsigned long long result;
-  __asm volatile(".byte 15;.byte 49;shlq $32,%%rdx;orq %%rdx,%%rax"
-    : "=a" (result) ::  "%rdx");
-  return result;
+    uint64_t val;
+    __asm volatile("mrs %0, pmccntr_el0": "=r"(val));
+    return val;
 }
 
 static void printfcomma (unsigned long long n)
