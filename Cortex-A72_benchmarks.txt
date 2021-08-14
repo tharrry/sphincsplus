@@ -1,0 +1,267 @@
+
+benchmark results of ref:
+
+key gen:
+    126f robust  8723435
+    126f simple  4309140
+    192f robust  12934689
+    192f simple  6313926
+    256f robust  49779755
+    265f simple  16664437
+    126s robust  555168309
+    126s simple  273395754
+    192s robust  829624282
+    192s simple  401371880
+    256s robust  779317929
+    265s simple  265597704
+signing:
+    126f robust  202340830
+    126f simple  100211109
+    192f robust  342208862
+    192f simple  169326395
+    256f robust  994728438
+    265f simple  349910936
+    126s robust  4162068986
+    126s simple  2069569548
+    192s robust  7683365976
+    192s simple  3827112118
+    256s robust  9576636616
+    265s simple  3448154481
+verifying:
+    126f robust  12622846
+    126f simple  6161825
+    192f robust  19345865
+    192f simple  9097654
+    256f robust  28032057
+    265f simple  9292108
+    126s robust  4379817
+    126s simple  1907059
+    192s robust  7230574
+    192s simple  3429466
+    256s robust  14492381
+    265s simple  4748683
+
+
+benchmark results of refx4:
+
+key gen:
+    126f robust  8690930
+    126f simple  4370510
+    192f robust  13440492
+    192f simple  6360065
+    256f robust  48203243
+    265f simple  16828711
+    126s robust  580716336
+    126s simple  290263081
+    192s robust  826474327
+    192s simple  407974545
+    256s robust  777199056
+    265s simple  271265198
+signing:
+    126f robust  202022086
+    126f simple  101737388
+    192f robust  356104439
+    192f simple  172748029
+    256f robust  987987780
+    265f simple  355395622
+    126s robust  4170304476
+    126s simple  2205160765
+    192s robust  7664619739
+    192s simple  3926050148
+    256s robust  9606616993
+    265s simple  3557227115
+verifying:
+    126f robust  13266943
+    126f simple  6550080
+    192f robust  20906278
+    192f simple  9641511
+    256f robust  29344751
+    265f simple  9928705
+    126s robust  4652169
+    126s simple  2281351
+    192s robust  7272897
+    192s simple  3449027
+    256s robust  15417007
+    265s simple  4966769
+
+
+benchmark results of transpose2:
+
+key gen:
+    126f robust  8807349
+    126f simple  4434037
+    192f robust  12817030
+    192f simple  6343345
+    256f robust  72798020
+    265f simple  16783466
+    126s robust  548970971
+    126s simple  275810638
+    192s robust  814573945
+    192s simple  403501610
+    256s robust  1158724044
+    265s simple  268573219
+signing:
+    126f robust  203033915
+    126f simple  102103969
+    192f robust  337993857
+    192f simple  170948878
+    256f robust  1451364977
+    265f simple  355306341
+    126s robust  4184228224
+    126s simple  2100162282
+    192s robust  7560260586
+    192s simple  3859329814
+    256s robust  13605706278
+    265s simple  3522686531
+verifying:
+    126f robust  13847943
+    126f simple  6266940
+    192f robust  20246823
+    192f simple  9472544
+    256f robust  43126887
+    265f simple  9922102
+    126s robust  4529443
+    126s simple  2257413
+    192s robust  7006119
+    192s simple  3259223
+    256s robust  21305363
+    265s simple  4940708
+
+comparing
+    ref
+to
+    refx4
+
+key gen:
+    256f simple  -1.0
+    256s simple  -2.1
+    192f simple  -0.7
+    192s simple  -1.6
+    128f simple  -1.4
+    128s simple  -6.2
+    256f robust  3.2
+    256s robust  0.3
+    192f robust  -3.9
+    192s robust  0.4
+    128f robust  0.4
+    128s robust  -4.6
+
+signing:
+    256f simple  -1.6
+    256s simple  -3.2
+    192f simple  -2.0
+    192s simple  -2.6
+    128f simple  -1.5
+    128s simple  -6.6
+    256f robust  0.7
+    256s robust  -0.3
+    192f robust  -4.1
+    192s robust  0.2
+    128f robust  0.2
+    128s robust  -0.2
+
+verifying:
+    256f simple  -6.9
+    256s simple  -4.6
+    192f simple  -6.0
+    192s simple  -0.6
+    128f simple  -6.3
+    128s simple  -19.6
+    256f robust  -4.7
+    256s robust  -6.4
+    192f robust  -8.1
+    192s robust  -0.6
+    128f robust  -5.1
+    128s robust  -6.2
+comparing
+    ref
+to
+    transpose2
+
+key gen:
+    256f simple  -0.7
+    256s simple  -1.1
+    192f simple  -0.5
+    192s simple  -0.5
+    128f simple  -2.9
+    128s simple  -0.9
+    256f robust  -46.2
+    256s robust  -48.7
+    192f robust  0.9
+    192s robust  1.8
+    128f robust  -1.0
+    128s robust  1.1
+
+signing:
+    256f simple  -1.5
+    256s simple  -2.2
+    192f simple  -1.0
+    192s simple  -0.8
+    128f simple  -1.9
+    128s simple  -1.5
+    256f robust  -45.9
+    256s robust  -42.1
+    192f robust  1.2
+    192s robust  1.6
+    128f robust  -0.3
+    128s robust  -0.5
+
+verifying:
+    256f simple  -6.8
+    256s simple  -4.0
+    192f simple  -4.1
+    192s simple  5.0
+    128f simple  -1.7
+    128s simple  -18.4
+    256f robust  -53.8
+    256s robust  -47.0
+    192f robust  -4.7
+    192s robust  3.1
+    128f robust  -9.7
+    128s robust  -3.4
+comparing
+    refx4
+to
+    transpose2
+
+key gen:
+    256f simple  0.3
+    256s simple  1.0
+    192f simple  0.3
+    192s simple  1.1
+    128f simple  -1.5
+    128s simple  5.0
+    256f robust  -51.0
+    256s robust  -49.1
+    192f robust  4.6
+    192s robust  1.4
+    128f robust  -1.3
+    128s robust  5.5
+
+signing:
+    256f simple  0.0
+    256s simple  1.0
+    192f simple  1.0
+    192s simple  1.7
+    128f simple  -0.4
+    128s simple  4.8
+    256f robust  -46.9
+    256s robust  -41.6
+    192f robust  5.1
+    192s robust  1.4
+    128f robust  -0.5
+    128s robust  -0.3
+
+verifying:
+    256f simple  0.1
+    256s simple  0.5
+    192f simple  1.8
+    192s simple  5.5
+    128f simple  4.3
+    128s simple  1.0
+    256f robust  -47.0
+    256s robust  -38.2
+    192f robust  3.2
+    192s robust  3.7
+    128f robust  -4.4
+    128s robust  2.6
