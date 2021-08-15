@@ -1,15 +1,15 @@
 PARAMS = sphincs-sha256-128f
-THASH = robust
+THASH = simple
 
 CC=/usr/bin/gcc
-CFLAGS=-Wall -Wextra -Wpedantic -O3 -std=c99 -DPARAMS=$(PARAMS) $(EXTRA_CFLAGS) -flax-vector-conversions #-fsanitize=address -g
+CFLAGS=-Wall -Wextra -Wpedantic -O3 -std=c99 -DPARAMS=$(PARAMS) $(EXTRA_CFLAGS) -flax-vector-conversions -march=native#-fsanitize=address -g
 
 SOURCES =          address.c randombytes.c merkle.c wots.c          utils.c utilsx4.c fors.c sign.c #utilsx1.c wotsx1.c
 HEADERS = params.h address.h randombytes.h merkle.h wots.h wotsx4.h utils.h utilsx4.h fors.h api.h  hash.h thash.h  hashx4.h thashx4.h #wotsx1.h utilsx1.h
 
 ifneq (,$(findstring sha256,$(PARAMS)))
-	SOURCES += sha256.c hash_sha256.c hash_sha256x4.c sha256_neon.c sha256_neon11.c thash_sha256_$(THASH).c  thash_sha256_$(THASH)x4.c
-	HEADERS += sha256.h                               sha256_neon.h sha256_neon.h
+	SOURCES += sha256.c hash_sha256.c hash_sha256x4.c sha256_neon11.c thash_sha256_$(THASH).c  thash_sha256_$(THASH)x4.c
+	HEADERS += sha256.h                               sha256_neon11.h
 endif
 
 DET_SOURCES = $(SOURCES:randombytes.%=rng.%)
@@ -44,6 +44,7 @@ test/%.exec: test/%
 	@$<
 
 clean:
+	@echo $(EXTRA_CFLAGS)
 	-$(RM) $(TESTS)
 	-$(RM) $(BENCHMARK)
 	-$(RM) PQCgenKAT_sign

@@ -6,7 +6,8 @@
 #include "params.h"
 #include "hashx4.h"
 #include "sha256.h"
-#include "sha256_neon.h"
+//#include "sha256_neon.h"
+#include "sha256_neon11.h"
 
 
 
@@ -30,7 +31,7 @@ void prf_addrx4(unsigned char *out0,
                          addrx4 + j*8, SPX_SHA256_ADDR_BYTES);
     }
 
-    sha256x4(outbufx4 + 0*SPX_SHA256_OUTPUT_BYTES,
+    sha256x42(outbufx4 + 0*SPX_SHA256_OUTPUT_BYTES,
                 outbufx4 + 1*SPX_SHA256_OUTPUT_BYTES,
                 outbufx4 + 2*SPX_SHA256_OUTPUT_BYTES,
                 outbufx4 + 3*SPX_SHA256_OUTPUT_BYTES,

@@ -30,7 +30,7 @@ void thashx4(
     unsigned char buf1[SPX_SHA256_ADDR_BYTES + inblocks*SPX_N];
     unsigned char buf2[SPX_SHA256_ADDR_BYTES + inblocks*SPX_N];
     unsigned char buf3[SPX_SHA256_ADDR_BYTES + inblocks*SPX_N];
-    unsigned char outbuf0[SPX_SHA256_OUTPUT_BYTES]; 
+    unsigned char outbuf0[SPX_SHA256_OUTPUT_BYTES];
     unsigned char outbuf1[SPX_SHA256_OUTPUT_BYTES];
     unsigned char outbuf2[SPX_SHA256_OUTPUT_BYTES];
     unsigned char outbuf3[SPX_SHA256_OUTPUT_BYTES];

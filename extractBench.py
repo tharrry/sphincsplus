@@ -190,7 +190,7 @@ def main():
     print(ref)
     refx4 = Results('refx4.txt')
     print(refx4)
-    neon = Results('transpose.txt')
+    neon = Results('transpose2.txt')
     print(neon)
     ref.compare(refx4)
     ref.compare(neon)

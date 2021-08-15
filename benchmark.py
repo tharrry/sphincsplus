@@ -6,8 +6,8 @@ import sys
 from subprocess import DEVNULL, run
 
 implementations = [
-                   ('ref', ['sha256']),
-                   ('refx4', ['sha256']),
+                   #('ref', ['sha256']),
+                   #('refx4', ['sha256']),
                    ('refx4neon_transpose', ['sha256']),
                    #('haraka-aesni', ['haraka']),
                    #('shake256-avx2', ['shake256']),

@@ -1,0 +1,180 @@
+Benchmarking sphincs-sha256-128f robust using refx4
+make: Entering directory '/home/pi/github/myFork/sphincsplus/refx4'
+Parameters: n = 16, h = 66, d = 22, b = 6, k = 33, w = 16
+Running 10 iterations.
+Generating keypair.. avg.     5758.27 us (0.01 sec); median      8,625,548 cycles,      1x:      8,625,548 cycles
+  - WOTS pk gen 4x.. avg.     2861.98 us (0.00 sec); median      4,295,854 cycles,      2x:      8,591,708 cycles
+Signing..            avg.   133356.05 us (0.13 sec); median    200,052,774 cycles,      1x:    200,052,774 cycles
+  - FORS signing..   avg.     7051.28 us (0.01 sec); median     10,576,107 cycles,      1x:     10,576,107 cycles
+  - WOTS pk gen x4.. avg.     2857.72 us (0.00 sec); median      4,289,511 cycles,     44x:    188,738,484 cycles
+Verifying..          avg.     9036.36 us (0.01 sec); median     13,549,864 cycles,      1x:     13,549,864 cycles
+Signature size: 17088 (16.69 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/pi/github/myFork/sphincsplus/refx4'
+
+Benchmarking sphincs-sha256-128f simple using refx4
+make: Entering directory '/home/pi/github/myFork/sphincsplus/refx4'
+Parameters: n = 16, h = 66, d = 22, b = 6, k = 33, w = 16
+Running 10 iterations.
+Generating keypair.. avg.     2882.64 us (0.00 sec); median      4,305,635 cycles,      1x:      4,305,635 cycles
+  - WOTS pk gen 4x.. avg.     1433.65 us (0.00 sec); median      2,142,707 cycles,      2x:      4,285,414 cycles
+Signing..            avg.    66792.65 us (0.07 sec); median    100,183,535 cycles,      1x:    100,183,535 cycles
+  - FORS signing..   avg.     4106.87 us (0.00 sec); median      6,161,109 cycles,      1x:      6,161,109 cycles
+  - WOTS pk gen x4.. avg.     1432.37 us (0.00 sec); median      2,144,038 cycles,     44x:     94,337,672 cycles
+Verifying..          avg.     4281.24 us (0.00 sec); median      6,415,628 cycles,      1x:      6,415,628 cycles
+Signature size: 17088 (16.69 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/pi/github/myFork/sphincsplus/refx4'
+
+Benchmarking sphincs-sha256-192f robust using refx4
+make: Entering directory '/home/pi/github/myFork/sphincsplus/refx4'
+Parameters: n = 24, h = 66, d = 22, b = 8, k = 33, w = 16
+Running 10 iterations.
+Generating keypair.. avg.     8556.55 us (0.01 sec); median     12,824,482 cycles,      1x:     12,824,482 cycles
+  - WOTS pk gen 4x.. avg.     4237.34 us (0.00 sec); median      6,353,220 cycles,      2x:     12,706,440 cycles
+Signing..            avg.   225066.82 us (0.23 sec); median    337,643,718 cycles,      1x:    337,643,718 cycles
+  - FORS signing..   avg.    37816.06 us (0.04 sec); median     56,725,639 cycles,      1x:     56,725,639 cycles
+  - WOTS pk gen x4.. avg.     4231.53 us (0.00 sec); median      6,343,212 cycles,     44x:    279,101,328 cycles
+Verifying..          avg.    13335.94 us (0.01 sec); median     19,993,036 cycles,      1x:     19,993,036 cycles
+Signature size: 35664 (34.83 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/pi/github/myFork/sphincsplus/refx4'
+
+Benchmarking sphincs-sha256-192f simple using refx4
+make: Entering directory '/home/pi/github/myFork/sphincsplus/refx4'
+Parameters: n = 24, h = 66, d = 22, b = 8, k = 33, w = 16
+Running 10 iterations.
+Generating keypair.. avg.     4216.88 us (0.00 sec); median      6,316,367 cycles,      1x:      6,316,367 cycles
+  - WOTS pk gen 4x.. avg.     2088.73 us (0.00 sec); median      3,133,820 cycles,      2x:      6,267,640 cycles
+Signing..            avg.   112841.75 us (0.11 sec); median    169,260,766 cycles,      1x:    169,260,766 cycles
+  - FORS signing..   avg.    20731.98 us (0.02 sec); median     31,098,562 cycles,      1x:     31,098,562 cycles
+  - WOTS pk gen x4.. avg.     2089.03 us (0.00 sec); median      3,134,062 cycles,     44x:    137,898,728 cycles
+Verifying..          avg.     6378.82 us (0.01 sec); median      9,564,234 cycles,      1x:      9,564,234 cycles
+Signature size: 35664 (34.83 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/pi/github/myFork/sphincsplus/refx4'
+
+Benchmarking sphincs-sha256-256f robust using refx4
+make: Entering directory '/home/pi/github/myFork/sphincsplus/refx4'
+Parameters: n = 32, h = 68, d = 17, b = 9, k = 35, w = 16
+Running 10 iterations.
+Generating keypair.. avg.    32403.70 us (0.03 sec); median     48,855,288 cycles,      1x:     48,855,288 cycles
+  - WOTS pk gen 4x.. avg.     7985.69 us (0.01 sec); median     11,976,501 cycles,      4x:     47,906,004 cycles
+Signing..            avg.   653641.46 us (0.65 sec); median    980,529,480 cycles,      1x:    980,529,480 cycles
+  - FORS signing..   avg.   109541.53 us (0.11 sec); median    164,316,923 cycles,      1x:    164,316,923 cycles
+  - WOTS pk gen x4.. avg.     7984.68 us (0.01 sec); median     11,976,720 cycles,     68x:    814,416,960 cycles
+Verifying..          avg.    20260.25 us (0.02 sec); median     30,378,738 cycles,      1x:     30,378,738 cycles
+Signature size: 49856 (48.69 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 128 (0.12 KiB)
+make: Leaving directory '/home/pi/github/myFork/sphincsplus/refx4'
+
+Benchmarking sphincs-sha256-256f simple using refx4
+make: Entering directory '/home/pi/github/myFork/sphincsplus/refx4'
+Parameters: n = 32, h = 68, d = 17, b = 9, k = 35, w = 16
+Running 10 iterations.
+Generating keypair.. avg.    11552.32 us (0.01 sec); median     17,309,190 cycles,      1x:     17,309,190 cycles
+  - WOTS pk gen 4x.. avg.     2883.15 us (0.00 sec); median      4,323,903 cycles,      4x:     17,295,612 cycles
+Signing..            avg.   232843.20 us (0.23 sec); median    349,247,531 cycles,      1x:    349,247,531 cycles
+  - FORS signing..   avg.    43954.19 us (0.04 sec); median     65,951,141 cycles,      1x:     65,951,141 cycles
+  - WOTS pk gen x4.. avg.     2767.52 us (0.00 sec); median      4,151,791 cycles,     68x:    282,321,788 cycles
+Verifying..          avg.     6487.41 us (0.01 sec); median      9,721,896 cycles,      1x:      9,721,896 cycles
+Signature size: 49856 (48.69 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 128 (0.12 KiB)
+make: Leaving directory '/home/pi/github/myFork/sphincsplus/refx4'
+
+Benchmarking sphincs-sha256-128s robust using refx4
+make: Entering directory '/home/pi/github/myFork/sphincsplus/refx4'
+Parameters: n = 16, h = 63, d = 7, b = 12, k = 14, w = 16
+Running 10 iterations.
+Generating keypair.. avg.   368386.16 us (0.37 sec); median    552,615,109 cycles,      1x:    552,615,109 cycles
+  - WOTS pk gen 4x.. avg.     2863.53 us (0.00 sec); median      4,295,272 cycles,    128x:    549,794,816 cycles
+Signing..            avg.  2756600.48 us (2.76 sec); median  4,134,562,449 cycles,      1x:  4,134,562,449 cycles
+  - FORS signing..   avg.   185934.49 us (0.19 sec); median    278,943,380 cycles,      1x:    278,943,380 cycles
+  - WOTS pk gen x4.. avg.     2864.18 us (0.00 sec); median      4,296,349 cycles,    896x:  3,849,528,704 cycles
+Verifying..          avg.     3156.01 us (0.00 sec); median      4,732,108 cycles,      1x:      4,732,108 cycles
+Signature size: 7856 (7.67 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/pi/github/myFork/sphincsplus/refx4'
+
+Benchmarking sphincs-sha256-128s simple using refx4
+make: Entering directory '/home/pi/github/myFork/sphincsplus/refx4'
+Parameters: n = 16, h = 63, d = 7, b = 12, k = 14, w = 16
+Running 10 iterations.
+Generating keypair.. avg.   191802.55 us (0.19 sec); median    287,930,512 cycles,      1x:    287,930,512 cycles
+  - WOTS pk gen 4x.. avg.     1490.72 us (0.00 sec); median      2,234,769 cycles,    128x:    286,050,432 cycles
+Signing..            avg.  1454947.98 us (1.45 sec); median  2,182,398,820 cycles,      1x:  2,182,398,820 cycles
+  - FORS signing..   avg.   113135.86 us (0.11 sec); median    169,539,737 cycles,      1x:    169,539,737 cycles
+  - WOTS pk gen x4.. avg.     1484.30 us (0.00 sec); median      2,225,788 cycles,    896x:  1,994,306,048 cycles
+Verifying..          avg.     1684.42 us (0.00 sec); median      2,524,513 cycles,      1x:      2,524,513 cycles
+Signature size: 7856 (7.67 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/pi/github/myFork/sphincsplus/refx4'
+
+Benchmarking sphincs-sha256-192s robust using refx4
+make: Entering directory '/home/pi/github/myFork/sphincsplus/refx4'
+Parameters: n = 24, h = 63, d = 7, b = 14, k = 17, w = 16
+Running 10 iterations.
+Generating keypair.. avg.   546022.07 us (0.55 sec); median    819,070,585 cycles,      1x:    819,070,585 cycles
+  - WOTS pk gen 4x.. avg.     4260.51 us (0.00 sec); median      6,394,195 cycles,    128x:    818,456,960 cycles
+Signing..            avg.  5070776.66 us (5.07 sec); median  7,607,347,598 cycles,      1x:  7,607,347,598 cycles
+  - FORS signing..   avg.  1235518.11 us (1.24 sec); median  1,853,009,323 cycles,      1x:  1,853,009,323 cycles
+  - WOTS pk gen x4.. avg.     4255.28 us (0.00 sec); median      6,380,097 cycles,    896x:  5,716,566,912 cycles
+Verifying..          avg.     4821.70 us (0.00 sec); median      7,224,194 cycles,      1x:      7,224,194 cycles
+Signature size: 16224 (15.84 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/pi/github/myFork/sphincsplus/refx4'
+
+Benchmarking sphincs-sha256-192s simple using refx4
+make: Entering directory '/home/pi/github/myFork/sphincsplus/refx4'
+Parameters: n = 24, h = 63, d = 7, b = 14, k = 17, w = 16
+Running 10 iterations.
+Generating keypair.. avg.   268960.26 us (0.27 sec); median    403,479,027 cycles,      1x:    403,479,027 cycles
+  - WOTS pk gen 4x.. avg.     2091.87 us (0.00 sec); median      3,139,186 cycles,    128x:    401,815,808 cycles
+Signing..            avg.  2563980.58 us (2.56 sec); median  3,846,194,158 cycles,      1x:  3,846,194,158 cycles
+  - FORS signing..   avg.   681569.41 us (0.68 sec); median  1,022,556,347 cycles,      1x:  1,022,556,347 cycles
+  - WOTS pk gen x4.. avg.     2088.12 us (0.00 sec); median      3,131,202 cycles,    896x:  2,805,556,992 cycles
+Verifying..          avg.     2257.82 us (0.00 sec); median      3,380,751 cycles,      1x:      3,380,751 cycles
+Signature size: 16224 (15.84 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/pi/github/myFork/sphincsplus/refx4'
+
+Benchmarking sphincs-sha256-256s robust using refx4
+make: Entering directory '/home/pi/github/myFork/sphincsplus/refx4'
+Parameters: n = 32, h = 64, d = 8, b = 14, k = 22, w = 16
+Running 10 iterations.
+Generating keypair.. avg.   518206.26 us (0.52 sec); median    775,289,520 cycles,      1x:    775,289,520 cycles
+  - WOTS pk gen 4x.. avg.     8041.15 us (0.01 sec); median     12,047,360 cycles,     64x:    771,031,040 cycles
+Signing..            avg.  6321958.29 us (6.32 sec); median  9,507,486,367 cycles,      1x:  9,507,486,367 cycles
+  - FORS signing..   avg.  2200607.98 us (2.20 sec); median  3,300,986,583 cycles,      1x:  3,300,986,583 cycles
+  - WOTS pk gen x4.. avg.     8025.93 us (0.01 sec); median     12,038,102 cycles,    512x:  6,163,508,224 cycles
+Verifying..          avg.    10486.02 us (0.01 sec); median     15,720,062 cycles,      1x:     15,720,062 cycles
+Signature size: 29792 (29.09 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 128 (0.12 KiB)
+make: Leaving directory '/home/pi/github/myFork/sphincsplus/refx4'
+
+Benchmarking sphincs-sha256-256s simple using refx4
+make: Entering directory '/home/pi/github/myFork/sphincsplus/refx4'
+Parameters: n = 32, h = 64, d = 8, b = 14, k = 22, w = 16
+Running 10 iterations.
+Generating keypair.. avg.   179028.35 us (0.18 sec); median    268,540,067 cycles,      1x:    268,540,067 cycles
+  - WOTS pk gen 4x.. avg.     2781.71 us (0.00 sec); median      4,173,551 cycles,     64x:    267,107,264 cycles
+Signing..            avg.  2308874.88 us (2.31 sec); median  3,463,472,297 cycles,      1x:  3,463,472,297 cycles
+  - FORS signing..   avg.   883969.83 us (0.88 sec); median  1,326,286,172 cycles,      1x:  1,326,286,172 cycles
+  - WOTS pk gen x4.. avg.     2783.43 us (0.00 sec); median      4,173,688 cycles,    512x:  2,136,928,256 cycles
+Verifying..          avg.     3362.96 us (0.00 sec); median      5,031,044 cycles,      1x:      5,031,044 cycles
+Signature size: 29792 (29.09 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 128 (0.12 KiB)
+make: Leaving directory '/home/pi/github/myFork/sphincsplus/refx4'
+

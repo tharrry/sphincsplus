@@ -1,0 +1,180 @@
+Benchmarking sphincs-sha256-128f robust using ref
+make: Entering directory '/home/pi/github/sphincsplus/ref'
+Parameters: n = 16, h = 66, d = 22, b = 6, k = 33, w = 16
+Running 10 iterations.
+Generating keypair.. avg.     5849.22 us (0.01 sec); median      8,723,435 cycles,      1x:      8,723,435 cycles
+  - WOTS pk gen..    avg.      723.07 us (0.00 sec); median      1,083,298 cycles,      8x:      8,666,384 cycles
+Signing..            avg.   134643.18 us (0.13 sec); median    202,340,830 cycles,      1x:    202,340,830 cycles
+  - FORS signing..   avg.     6978.66 us (0.01 sec); median     10,447,133 cycles,      1x:     10,447,133 cycles
+  - WOTS pk gen..    avg.      721.70 us (0.00 sec); median      1,080,455 cycles,    176x:    190,160,080 cycles
+Verifying..          avg.     8431.25 us (0.01 sec); median     12,622,846 cycles,      1x:     12,622,846 cycles
+Signature size: 17088 (16.69 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/pi/github/sphincsplus/ref'
+
+Benchmarking sphincs-sha256-128f simple using ref
+make: Entering directory '/home/pi/github/sphincsplus/ref'
+Parameters: n = 16, h = 66, d = 22, b = 6, k = 33, w = 16
+Running 10 iterations.
+Generating keypair.. avg.     2878.35 us (0.00 sec); median      4,309,140 cycles,      1x:      4,309,140 cycles
+  - WOTS pk gen..    avg.      356.47 us (0.00 sec); median        532,374 cycles,      8x:      4,258,992 cycles
+Signing..            avg.    66801.45 us (0.07 sec); median    100,211,109 cycles,      1x:    100,211,109 cycles
+  - FORS signing..   avg.     4017.22 us (0.00 sec); median      6,023,317 cycles,      1x:      6,023,317 cycles
+  - WOTS pk gen..    avg.      355.78 us (0.00 sec); median        533,298 cycles,    176x:     93,860,448 cycles
+Verifying..          avg.     4109.43 us (0.00 sec); median      6,161,825 cycles,      1x:      6,161,825 cycles
+Signature size: 17088 (16.69 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/pi/github/sphincsplus/ref'
+
+Benchmarking sphincs-sha256-192f robust using ref
+make: Entering directory '/home/pi/github/sphincsplus/ref'
+Parameters: n = 24, h = 66, d = 22, b = 8, k = 33, w = 16
+Running 10 iterations.
+Generating keypair.. avg.     8645.71 us (0.01 sec); median     12,934,689 cycles,      1x:     12,934,689 cycles
+  - WOTS pk gen..    avg.     1074.07 us (0.00 sec); median      1,607,751 cycles,      8x:     12,862,008 cycles
+Signing..            avg.   227740.83 us (0.23 sec); median    342,208,862 cycles,      1x:    342,208,862 cycles
+  - FORS signing..   avg.    38101.73 us (0.04 sec); median     57,116,893 cycles,      1x:     57,116,893 cycles
+  - WOTS pk gen..    avg.     1071.19 us (0.00 sec); median      1,604,350 cycles,    176x:    282,365,600 cycles
+Verifying..          avg.    12912.59 us (0.01 sec); median     19,345,865 cycles,      1x:     19,345,865 cycles
+Signature size: 35664 (34.83 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/pi/github/sphincsplus/ref'
+
+Benchmarking sphincs-sha256-192f simple using ref
+make: Entering directory '/home/pi/github/sphincsplus/ref'
+Parameters: n = 24, h = 66, d = 22, b = 8, k = 33, w = 16
+Running 10 iterations.
+Generating keypair.. avg.     4224.61 us (0.00 sec); median      6,313,926 cycles,      1x:      6,313,926 cycles
+  - WOTS pk gen..    avg.      525.17 us (0.00 sec); median        784,719 cycles,      8x:      6,277,752 cycles
+Signing..            avg.   112722.84 us (0.11 sec); median    169,326,395 cycles,      1x:    169,326,395 cycles
+  - FORS signing..   avg.    20667.74 us (0.02 sec); median     30,965,629 cycles,      1x:     30,965,629 cycles
+  - WOTS pk gen..    avg.      525.39 us (0.00 sec); median        784,758 cycles,    176x:    138,117,408 cycles
+Verifying..          avg.     6061.87 us (0.01 sec); median      9,097,654 cycles,      1x:      9,097,654 cycles
+Signature size: 35664 (34.83 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/pi/github/sphincsplus/ref'
+
+Benchmarking sphincs-sha256-256f robust using ref
+make: Entering directory '/home/pi/github/sphincsplus/ref'
+Parameters: n = 32, h = 68, d = 17, b = 9, k = 35, w = 16
+Running 10 iterations.
+Generating keypair.. avg.    33195.58 us (0.03 sec); median     49,779,755 cycles,      1x:     49,779,755 cycles
+  - WOTS pk gen..    avg.     2021.39 us (0.00 sec); median      3,034,210 cycles,     16x:     48,547,360 cycles
+Signing..            avg.   661727.92 us (0.66 sec); median    994,728,438 cycles,      1x:    994,728,438 cycles
+  - FORS signing..   avg.   110886.12 us (0.11 sec); median    166,315,605 cycles,      1x:    166,315,605 cycles
+  - WOTS pk gen..    avg.     2020.82 us (0.00 sec); median      3,031,507 cycles,    272x:    824,569,904 cycles
+Verifying..          avg.    18692.47 us (0.02 sec); median     28,032,057 cycles,      1x:     28,032,057 cycles
+Signature size: 49856 (48.69 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 128 (0.12 KiB)
+make: Leaving directory '/home/pi/github/sphincsplus/ref'
+
+Benchmarking sphincs-sha256-256f simple using ref
+make: Entering directory '/home/pi/github/sphincsplus/ref'
+Parameters: n = 32, h = 68, d = 17, b = 9, k = 35, w = 16
+Running 10 iterations.
+Generating keypair.. avg.    11124.74 us (0.01 sec); median     16,664,437 cycles,      1x:     16,664,437 cycles
+  - WOTS pk gen..    avg.      691.29 us (0.00 sec); median      1,035,018 cycles,     16x:     16,560,288 cycles
+Signing..            avg.   233256.23 us (0.23 sec); median    349,910,936 cycles,      1x:    349,910,936 cycles
+  - FORS signing..   avg.    43929.45 us (0.04 sec); median     65,913,193 cycles,      1x:     65,913,193 cycles
+  - WOTS pk gen..    avg.      691.18 us (0.00 sec); median      1,035,029 cycles,    272x:    281,527,888 cycles
+Verifying..          avg.     6194.18 us (0.01 sec); median      9,292,108 cycles,      1x:      9,292,108 cycles
+Signature size: 49856 (48.69 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 128 (0.12 KiB)
+make: Leaving directory '/home/pi/github/sphincsplus/ref'
+
+Benchmarking sphincs-sha256-128s robust using ref
+make: Entering directory '/home/pi/github/sphincsplus/ref'
+Parameters: n = 16, h = 63, d = 7, b = 12, k = 14, w = 16
+Running 10 iterations.
+Generating keypair.. avg.   370049.36 us (0.37 sec); median    555,168,309 cycles,      1x:    555,168,309 cycles
+  - WOTS pk gen..    avg.      721.87 us (0.00 sec); median      1,079,901 cycles,    512x:    552,909,312 cycles
+Signing..            avg.  2774602.26 us (2.77 sec); median  4,162,068,986 cycles,      1x:  4,162,068,986 cycles
+  - FORS signing..   avg.   188632.50 us (0.19 sec); median    282,970,753 cycles,      1x:    282,970,753 cycles
+  - WOTS pk gen..    avg.      720.53 us (0.00 sec); median      1,079,882 cycles,   3584x:  3,870,297,088 cycles
+Verifying..          avg.     2920.64 us (0.00 sec); median      4,379,817 cycles,      1x:      4,379,817 cycles
+Signature size: 7856 (7.67 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/pi/github/sphincsplus/ref'
+
+Benchmarking sphincs-sha256-128s simple using ref
+make: Entering directory '/home/pi/github/sphincsplus/ref'
+Parameters: n = 16, h = 63, d = 7, b = 12, k = 14, w = 16
+Running 10 iterations.
+Generating keypair.. avg.   182265.82 us (0.18 sec); median    273,395,754 cycles,      1x:    273,395,754 cycles
+  - WOTS pk gen..    avg.      356.44 us (0.00 sec); median        533,280 cycles,    512x:    273,039,360 cycles
+Signing..            avg.  1380245.04 us (1.38 sec); median  2,069,569,548 cycles,      1x:  2,069,569,548 cycles
+  - FORS signing..   avg.   108207.99 us (0.11 sec); median    162,331,172 cycles,      1x:    162,331,172 cycles
+  - WOTS pk gen..    avg.      355.58 us (0.00 sec); median        531,602 cycles,   3584x:  1,905,261,568 cycles
+Verifying..          avg.     1274.62 us (0.00 sec); median      1,907,059 cycles,      1x:      1,907,059 cycles
+Signature size: 7856 (7.67 KiB)
+Public key size: 32 (0.03 KiB)
+Secret key size: 64 (0.06 KiB)
+make: Leaving directory '/home/pi/github/sphincsplus/ref'
+
+Benchmarking sphincs-sha256-192s robust using ref
+make: Entering directory '/home/pi/github/sphincsplus/ref'
+Parameters: n = 24, h = 63, d = 7, b = 14, k = 17, w = 16
+Running 10 iterations.
+Generating keypair.. avg.   553020.80 us (0.55 sec); median    829,624,282 cycles,      1x:    829,624,282 cycles
+  - WOTS pk gen..    avg.     1079.09 us (0.00 sec); median      1,614,783 cycles,    512x:    826,768,896 cycles
+Signing..            avg.  5121881.22 us (5.12 sec); median  7,683,365,976 cycles,      1x:  7,683,365,976 cycles
+  - FORS signing..   avg.  1254457.12 us (1.25 sec); median  1,881,909,250 cycles,      1x:  1,881,909,250 cycles
+  - WOTS pk gen..    avg.     1076.70 us (0.00 sec); median      1,611,788 cycles,   3584x:  5,776,648,192 cycles
+Verifying..          avg.     4822.91 us (0.00 sec); median      7,230,574 cycles,      1x:      7,230,574 cycles
+Signature size: 16224 (15.84 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/pi/github/sphincsplus/ref'
+
+Benchmarking sphincs-sha256-192s simple using ref
+make: Entering directory '/home/pi/github/sphincsplus/ref'
+Parameters: n = 24, h = 63, d = 7, b = 14, k = 17, w = 16
+Running 10 iterations.
+Generating keypair.. avg.   267555.47 us (0.27 sec); median    401,371,880 cycles,      1x:    401,371,880 cycles
+  - WOTS pk gen..    avg.      520.89 us (0.00 sec); median        779,681 cycles,    512x:    399,196,672 cycles
+Signing..            avg.  2551225.19 us (2.55 sec); median  3,827,112,118 cycles,      1x:  3,827,112,118 cycles
+  - FORS signing..   avg.   679476.32 us (0.68 sec); median  1,019,171,437 cycles,      1x:  1,019,171,437 cycles
+  - WOTS pk gen..    avg.      520.51 us (0.00 sec); median        777,573 cycles,   3584x:  2,786,821,632 cycles
+Verifying..          avg.     2286.48 us (0.00 sec); median      3,429,466 cycles,      1x:      3,429,466 cycles
+Signature size: 16224 (15.84 KiB)
+Public key size: 48 (0.05 KiB)
+Secret key size: 96 (0.09 KiB)
+make: Leaving directory '/home/pi/github/sphincsplus/ref'
+
+Benchmarking sphincs-sha256-256s robust using ref
+make: Entering directory '/home/pi/github/sphincsplus/ref'
+Parameters: n = 32, h = 64, d = 8, b = 14, k = 22, w = 16
+Running 10 iterations.
+Generating keypair.. avg.   519454.18 us (0.52 sec); median    779,317,929 cycles,      1x:    779,317,929 cycles
+  - WOTS pk gen..    avg.     2022.73 us (0.00 sec); median      3,034,584 cycles,    256x:    776,853,504 cycles
+Signing..            avg.  6383973.44 us (6.38 sec); median  9,576,636,616 cycles,      1x:  9,576,636,616 cycles
+  - FORS signing..   avg.  2234967.91 us (2.23 sec); median  3,352,491,614 cycles,      1x:  3,352,491,614 cycles
+  - WOTS pk gen..    avg.     2021.23 us (0.00 sec); median      3,032,818 cycles,   2048x:  6,211,211,264 cycles
+Verifying..          avg.     9661.66 us (0.01 sec); median     14,492,381 cycles,      1x:     14,492,381 cycles
+Signature size: 29792 (29.09 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 128 (0.12 KiB)
+make: Leaving directory '/home/pi/github/sphincsplus/ref'
+
+Benchmarking sphincs-sha256-256s simple using ref
+make: Entering directory '/home/pi/github/sphincsplus/ref'
+Parameters: n = 32, h = 64, d = 8, b = 14, k = 22, w = 16
+Running 10 iterations.
+Generating keypair.. avg.   179554.12 us (0.18 sec); median    265,597,704 cycles,      1x:    265,597,704 cycles
+  - WOTS pk gen..    avg.      694.86 us (0.00 sec); median      1,038,810 cycles,    256x:    265,935,360 cycles
+Signing..            avg.  2298577.65 us (2.30 sec); median  3,448,154,481 cycles,      1x:  3,448,154,481 cycles
+  - FORS signing..   avg.   882172.44 us (0.88 sec); median  1,323,371,929 cycles,      1x:  1,323,371,929 cycles
+  - WOTS pk gen..    avg.      695.97 us (0.00 sec); median      1,040,478 cycles,   2048x:  2,130,898,944 cycles
+Verifying..          avg.     3167.24 us (0.00 sec); median      4,748,683 cycles,      1x:      4,748,683 cycles
+Signature size: 29792 (29.09 KiB)
+Public key size: 64 (0.06 KiB)
+Secret key size: 128 (0.12 KiB)
+make: Leaving directory '/home/pi/github/sphincsplus/ref'
+
