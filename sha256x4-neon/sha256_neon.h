@@ -1,5 +1,5 @@
-#ifndef SHA256_NEON3_H
-#define SHA256_NEON3_H 
+#ifndef SHA256_NEON_H
+#define SHA256_NEON_H 
 
 #include <stddef.h>
 #include <stdint.h>
@@ -13,7 +13,7 @@
 #define SPX_SHA256_OUTPUT_BYTES 32
 /* Structure for the incremental API */
 typedef struct {
-    uint8_t *ctx;
+    uint8_t ctx[4*PQC_sha256ctx2_BYTES + 8];
 } sha256ctx2;
 
 /* ====== SHA256 API ==== */
@@ -22,12 +22,6 @@ typedef struct {
  * Initialize the incremental hashing API
  */
 void sha256x4_inc_init(sha256ctx2 *state);
-
-/**
- * Copy the hashing state
- */
-void sha256x4_inc_ctx_clone(sha256ctx2 *stateout, const sha256ctx2 *statein);
-
 /**
  * Absorb blocks
  */
@@ -49,11 +43,6 @@ void sha256x4_inc_finalize(
                             const uint8_t *in2,
                             const uint8_t *in3,
                             size_t inlen);
-/**
- * Destroy the state. Make sure to use this, as this API may not always be stack-based.
- */
-void sha256x4_inc_ctx_release(sha256ctx2 *state);
-
 /**
  * All-in-one sha256 function
  */

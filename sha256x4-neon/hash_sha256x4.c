@@ -6,8 +6,7 @@
 #include "params.h"
 #include "hashx4.h"
 #include "sha256.h"
-//#include "sha256_neon.h"
-#include "sha256_neon11.h"
+#include "sha256_neon.h"
 
 
 

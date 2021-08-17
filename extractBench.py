@@ -197,11 +197,11 @@ def main():
     refx4.compare(neon)
 
 
-    kg_matrix = [None] * 6
-    s_matrix = [None] * 6
-    v_matrix = [None] * 6
-
-
+    #kg_matrix = [None] * 6
+    #s_matrix = [None] * 6
+    #v_matrix = [None] * 6
+#
+#
     #(kg, s, v) = extractNumber('ref.txt')
     #(kgs_c, kgr_c, ss_c, sr_c, vs_c, vr_c) = rearrangeNumber(kg, s, v)
     #kg_matrix = addToMatrix(kg_matrix, kgs_c, kgr_c, 0)
@@ -226,6 +226,6 @@ def main():
     #    print(m)
     #for m in v_matrix:
     #    print(m)
-#
+
 if __name__ == "__main__":
     main()

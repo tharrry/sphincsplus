@@ -6,7 +6,6 @@
 #include "params.h"
 #include "hashx4.h"
 #include "sha256.h"
-#include "sha256_neon.h"
 
 
 
@@ -30,20 +29,10 @@ void prf_addrx4(unsigned char *out0,
                          addrx4 + j*8, SPX_SHA256_ADDR_BYTES);
     }
 
-    sha256(outbufx4 + 0 * SPX_SHA256_OUTPUT_BYTES, bufx4 + 0 * SPX_N + SPX_SHA256_ADDR_BYTES, SPX_N + SPX_SHA256_ADDR_BYTES);
-    sha256(outbufx4 + 1 * SPX_SHA256_OUTPUT_BYTES, bufx4 + 1 * SPX_N + SPX_SHA256_ADDR_BYTES, SPX_N + SPX_SHA256_ADDR_BYTES);
-    sha256(outbufx4 + 2 * SPX_SHA256_OUTPUT_BYTES, bufx4 + 2 * SPX_N + SPX_SHA256_ADDR_BYTES, SPX_N + SPX_SHA256_ADDR_BYTES);
-    sha256(outbufx4 + 3 * SPX_SHA256_OUTPUT_BYTES, bufx4 + 3 * SPX_N + SPX_SHA256_ADDR_BYTES, SPX_N + SPX_SHA256_ADDR_BYTES);
-
-    //sha256x4(outbufx4 + 0*SPX_SHA256_OUTPUT_BYTES,
-    //            outbufx4 + 1*SPX_SHA256_OUTPUT_BYTES,
-    //            outbufx4 + 2*SPX_SHA256_OUTPUT_BYTES,
-    //            outbufx4 + 3*SPX_SHA256_OUTPUT_BYTES,
-    //            bufx4 + 0*(SPX_N + SPX_SHA256_ADDR_BYTES),
-    //            bufx4 + 1*(SPX_N + SPX_SHA256_ADDR_BYTES),
-    //            bufx4 + 2*(SPX_N + SPX_SHA256_ADDR_BYTES),
-    //            bufx4 + 3*(SPX_N + SPX_SHA256_ADDR_BYTES),
-    //            SPX_N + SPX_SHA256_ADDR_BYTES);
+    sha256(outbufx4 + 0 * SPX_SHA256_OUTPUT_BYTES, bufx4 + 0 * (SPX_N + SPX_SHA256_ADDR_BYTES), SPX_N + SPX_SHA256_ADDR_BYTES);
+    sha256(outbufx4 + 1 * SPX_SHA256_OUTPUT_BYTES, bufx4 + 1 * (SPX_N + SPX_SHA256_ADDR_BYTES), SPX_N + SPX_SHA256_ADDR_BYTES);
+    sha256(outbufx4 + 2 * SPX_SHA256_OUTPUT_BYTES, bufx4 + 2 * (SPX_N + SPX_SHA256_ADDR_BYTES), SPX_N + SPX_SHA256_ADDR_BYTES);
+    sha256(outbufx4 + 3 * SPX_SHA256_OUTPUT_BYTES, bufx4 + 3 * (SPX_N + SPX_SHA256_ADDR_BYTES), SPX_N + SPX_SHA256_ADDR_BYTES);
 
     memcpy(out0, outbufx4 + 0*SPX_SHA256_OUTPUT_BYTES, SPX_N);
     memcpy(out1, outbufx4 + 1*SPX_SHA256_OUTPUT_BYTES, SPX_N);

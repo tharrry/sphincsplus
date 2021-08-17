@@ -1,8 +1,3 @@
-#include<stdio.h>
-#include<arm_neon.h>
-//#include "sha256_neon.h"
-
-
 /* Based on the public domain implementation in
  * crypto_hash/sha512/ref/ from http://bench.cr.yp.to/supercop.html
  * by D. J. Bernstein */
@@ -13,8 +8,8 @@
 #include <string.h>
 #include <stdio.h>
 #include <arm_neon.h>
-#include "sha256_neon11.h"
 #include "utils.h"
+#include "sha256_neon.h"
 
 static uint32x4_t load_bigendian_state_32(const uint8_t *x) {
     uint32x4_t result;
@@ -390,7 +385,7 @@ static size_t crypto_hashblocks_sha256(uint8_t *statebytes,
     store_bigendian_32(statebytes + 24, state[6]);
     store_bigendian_32(statebytes + 28, state[7]);
 
-    return inlen - offset;
+    return inlen - (offset*4);
 }
 
 

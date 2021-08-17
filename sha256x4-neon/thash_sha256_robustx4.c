@@ -8,7 +8,6 @@
 #include "params.h"
 #include "sha256.h"
 #include "sha256_neon.h"
-#include "sha256_neon11.h"
 
 /**
  * Takes an array of inblocks concatenated arrays of SPX_N bytes.
