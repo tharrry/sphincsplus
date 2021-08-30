@@ -2,7 +2,7 @@ PARAMS = sphincs-sha256-128f
 THASH = robust
 
 CC=/usr/bin/gcc
-CFLAGS=-Wall -Wextra -Wpedantic -O3 -std=c99 -DPARAMS=$(PARAMS) $(EXTRA_CFLAGS) -flax-vector-conversions -march=native#+nosimd #-fsanitize=address -g
+CFLAGS=-Wall -Wextra -Wpedantic -O3 -std=c99 -DPARAMS=$(PARAMS) $(EXTRA_CFLAGS)  -march=native#+nosimd #-fsanitize=address -g -flax-vector-conversions
 
 SOURCES =          address.c randombytes.c merkle.c wots.c          utils.c utilsx4.c fors.c sign.c #utilsx1.c wotsx1.c
 HEADERS = params.h address.h randombytes.h merkle.h wots.h wotsx4.h utils.h utilsx4.h fors.h api.h  hash.h thash.h  hashx4.h thashx4.h #wotsx1.h utilsx1.h
